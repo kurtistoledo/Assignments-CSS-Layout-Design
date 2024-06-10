@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'main sidebar'
+        'footer footer';
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main {
+    grid-area: main;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-areas:
+            'header'
+            'main'
+            'sidebar'
+            'footer';
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+/* Advanced Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'main sidebar'
+        'footer footer';
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    padding: 10px;
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main {
+    grid-area: main;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-areas:
+            'header'
+            'main'
+            'sidebar'
+            'footer';
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+}
